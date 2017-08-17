@@ -27,6 +27,14 @@ describe('comparison two iPhones scenario', function() {
 
       field.sendKeys(process.env.MY_USER);
 
+      var field = browser.$('#ij_last_name');
+      field.getAttribute('name').
+        then((attr) => {
+          console.log("NAME:", attr);
+        })
+
+      field.sendKeys(process.env.MY_USER);
+
       browser.sleep(5000);
 
     // console.log(process.env.MY_USER);
