@@ -8,3 +8,6 @@ process.argv.forEach(function (val, index, array) {
 
 console.log("your name is: " + process.argv[2]);
 console.log("your pass is: " + process.argv[3]);
+
+console.log("env name is: " + process.env.USER);
+console.log("env pass is: " + process.env.PASS);
