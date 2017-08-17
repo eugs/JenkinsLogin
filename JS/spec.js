@@ -18,22 +18,20 @@ describe('comparison two iPhones scenario', function() {
     it('should log in', function () {
       browser.sleep(2000);
 
+      var userName = process.env.MY_USER;
+      var userPass = process.env.MY_PASS;
+
       // browser.$('#index_email').sendKeys(process.env.MY_USER);
       var field = browser.$('#ij_first_name');
       field.getAttribute('name').
-        then((attr) => {
-          console.log("NAME:", attr);
-        })
 
-      field.sendKeys(process.env.MY_USER);
+      field.sendKeys(userName);
+      console.log("type name", userName);
 
       var field = browser.$('#ij_last_name');
-      field.getAttribute('name').
-        then((attr) => {
-          console.log("NAME:", attr);
-        })
+      field.sendKeys(userPass);
 
-      field.sendKeys(process.env.MY_PASS);
+      console.log("type pass:", userPass)
 
       browser.sleep(5000);
 
