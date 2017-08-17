@@ -21,6 +21,7 @@ exports.config = {
   specs:
   [
     'spec.js',
+    // 'getCredentials.js'
 
   ],
 
