@@ -30,7 +30,7 @@ describe('login', function() {
       console.log("type name", userName);
       console.log("type pass:", userPass)
 
-      browser.switchTo().activeElement();
+      browser.driver.switchTo().activeElement();
 
       browser.sleep(2000);
       console.log("execute");
