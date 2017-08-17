@@ -38,7 +38,9 @@ describe('login', function() {
           console.log(err);
           console.log(data.toString());
       });
-      browser.sleep(5000);
+
+      console.log("after execution");
+      browser.sleep(10000);
     })
 
 
