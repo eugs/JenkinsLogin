@@ -23,8 +23,7 @@ describe('login', function() {
       // var userName = process.env.MY_USER;
       // var userPass = process.env.MY_PASS;
 
-
-            var userName = 'nameafsdgasdgsdfhhdfjdfjsdgasdfgwertwehdfhdfhdfh';
+      var userName = 'nameafsdgasdgsdfhhdfjdfjsdgasdfgwertwehdfhdfhdfh';
       var userPass = 'pass';
 
       console.log("type name", userName);
@@ -33,12 +32,13 @@ describe('login', function() {
       browser.driver.switchTo().activeElement();
 
       browser.sleep(2000);
-      console.log("execute");
+
+      console.log("execute script");
       exec('./login.exe', [userName, userPass], function(err, data) {
           console.log(err);
           console.log(data.toString());
       });
-
+      browser.sleep(5000);
     })
 
 
