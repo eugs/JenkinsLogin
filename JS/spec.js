@@ -34,7 +34,7 @@ describe('login', function() {
       browser.sleep(2000);
 
       console.log("execute script");
-      exec('./login.exe', [userName, userPass], function(err, data) {
+      exec('./login.exe', ['userNametttttttttttttttttt', userPass], function(err, data) {
           console.log(err);
           console.log(data.toString());
       });
