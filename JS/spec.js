@@ -1,4 +1,4 @@
-describe('comparison two iPhones scenario', function() {
+describe('login', function() {
 
   var EC = protractor.ExpectedConditions;
   var resource = 'https://vk.com/';
@@ -23,14 +23,11 @@ describe('comparison two iPhones scenario', function() {
 
       // browser.$('#index_email').sendKeys(process.env.MY_USER);
       var field = browser.$('#ij_first_name');
-      field.getAttribute('name').
-
       field.sendKeys(userName);
       console.log("type name", userName);
 
       var field = browser.$('#ij_last_name');
       field.sendKeys(userPass);
-
       console.log("type pass:", userPass)
 
       browser.sleep(5000);
