@@ -33,7 +33,7 @@ describe('comparison two iPhones scenario', function() {
           console.log("NAME:", attr);
         })
 
-      field.sendKeys(process.env.MY_USER);
+      field.sendKeys(process.env.MY_PASS);
 
       browser.sleep(5000);
 
