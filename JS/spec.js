@@ -20,12 +20,12 @@ describe('login', function() {
 
     it('should fill the prompt', function () {
 
-      var userName = process.env.MY_USER;
-      var userPass = process.env.MY_PASS;
+      // var userName = process.env.MY_USER;
+      // var userPass = process.env.MY_PASS;
 
 
-      //       var userName = 'nameafsdgasdgsdfhhdfjdfjsdgasdfgwertwehdfhdfhdfh';
-      // var userPass = 'pass';
+            var userName = 'nameafsdgasdgsdfhhdfjdfjsdgasdfgwertwehdfhdfhdfh';
+      var userPass = 'pass';
 
       console.log("type name", userName);
       console.log("type pass:", userPass)
