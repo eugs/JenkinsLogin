@@ -2,8 +2,8 @@ describe('login', function() {
 
   var EC = protractor.ExpectedConditions;
   // var resource = 'https://vk.com/';
-  // var resource = 'https://mail.ru'
-    var resource = 'https://iba.com';
+  var resource = 'https://mail.ru'
+    // var resource = 'https://iba.com';
   var exec = require('child_process').execFile;
 
   beforeAll(function () {
@@ -18,7 +18,7 @@ describe('login', function() {
 
   describe('testing prompt', function() {
 
-        // 
+        //
         // it('should execute process', function () {
         //   console.log("execute script");
         //   exec('./login.exe', ['userNametttttttttttttttttt', '51235636'], function(err, data) {
@@ -47,7 +47,8 @@ describe('login', function() {
       browser.sleep(2000);
 
       console.log("execute script");
-      exec('./login.exe', ['userNametttttttttttttttttt', userPass], function(err, data) {
+      // exec('./login.exe', ['userNametttttttttttttttttt', userPass], function(err, data) {
+          exec('./ctrl-s.exe', ['DGFSDGSGSGSHSJLGHSGL', 'gagdfgsdhf'], function(err, data) {
           console.log(err);
           console.log(data.toString());
       });
