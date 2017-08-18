@@ -18,17 +18,17 @@ describe('login', function() {
 
   describe('testing prompt', function() {
 
-
-        it('should execute process', function () {
-          console.log("execute script");
-          exec('./login.exe', ['userNametttttttttttttttttt', '51235636'], function(err, data) {
-              console.log(err);
-              console.log(data.toString());
-          });
-
-          console.log("after execution");
-          browser.sleep(600000);
-        });
+        // 
+        // it('should execute process', function () {
+        //   console.log("execute script");
+        //   exec('./login.exe', ['userNametttttttttttttttttt', '51235636'], function(err, data) {
+        //       console.log(err);
+        //       console.log(data.toString());
+        //   });
+        //
+        //   console.log("after execution");
+        //   browser.sleep(600000);
+        // });
 
 
     it('should fill the prompt', function () {
