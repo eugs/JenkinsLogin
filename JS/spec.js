@@ -18,26 +18,13 @@ describe('login', function() {
 
   describe('testing prompt', function() {
 
-        //
-        // it('should execute process', function () {
-        //   console.log("execute script");
-        //   exec('./login.exe', ['userNametttttttttttttttttt', '51235636'], function(err, data) {
-        //       console.log(err);
-        //       console.log(data.toString());
-        //   });
-        //
-        //   console.log("after execution");
-        //   browser.sleep(600000);
-        // });
-
-
     it('should fill the prompt', function () {
-
+      // for login(env), using with Jenkins Credentiasl plugin
       // var userName = process.env.MY_USER;
       // var userPass = process.env.MY_PASS;
 
-      var userName = 'nameafsdgasdgsdfhhdfjdfjsdgasdfgwertwehdfhdfhdfh';
-      var userPass = 'pass';
+      var userName = 'userName';
+      var userPass = 'userPassasfasdfsg';
 
       console.log("type name", userName);
       console.log("type pass:", userPass)
@@ -47,7 +34,7 @@ describe('login', function() {
       browser.sleep(2000);
 
       console.log("execute script");
-      exec('./login.exe', ['userNametttttttttttttttttt', userPass], function(err, data) {
+      exec('./login(args).exe', [userName, userPass], function(err, data) {
           // exec('./ctrl-s.exe', ['DGFSDGSGSGSHSJLGHSGL', 'gagdfgsdhf'], function(err, data) {
           console.log(err);
           console.log(data.toString());
